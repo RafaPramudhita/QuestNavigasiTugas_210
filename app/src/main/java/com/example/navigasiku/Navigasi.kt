@@ -51,7 +51,18 @@ fun DataApp(
                     }
                 )
             }
-
+            composable(Navigasi.Detail.name) {
+                TampilData(
+                    nama = nama,
+                    jenisKelamin = jenisKelamin,
+                    status = status,
+                    alamat = alamat,
+                    onBackBtnClick = {
+                        navController.navigate(Navigasi.Formulir.name)
+                    },
+                    navController = navController
+                )
+            }
         }
     }
 }
