@@ -24,6 +24,15 @@ fun DataApp(
     var alamat by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("") }
 
-    Scaffold {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Welcome.name,
+            modifier = Modifier.padding(isiRuang)
+        ) {
+
+
+
+        }
     }
 }
