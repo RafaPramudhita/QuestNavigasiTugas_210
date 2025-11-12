@@ -52,6 +52,41 @@ fun FormulirPendaftaran(
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(Color(0xFF7E57C2))
+                .padding(start = 24.dp, bottom = 10.dp),
+            contentAlignment = Alignment.BottomStart
+        ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Normal,
+                color = Color.White
+            )
+        }
+        Spacer(modifier = Modifier.height(25.dp))
 
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 24.dp),
+            shape = RoundedCornerShape(16.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 6.dp)
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(15.dp)
+            ) {
+
+
+
+
+
+
+            }
+        }
     }
 }
