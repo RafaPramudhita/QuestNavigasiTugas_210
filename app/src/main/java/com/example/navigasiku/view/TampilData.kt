@@ -35,5 +35,16 @@ fun TampilData(
         Pair("STATUS PERKAWINAN", status),
         Pair(stringResource(id = R.string.alamat), alamat)
     )
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(text = "Tampil Data", color = Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = Color(0xFF7E57C2)
+                )
+            )
+        }
+    ) { isiRuang ->
 
+    }
 }
