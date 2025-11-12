@@ -86,7 +86,16 @@ fun TampilData(
                 Text("Beranda", fontSize = 18.sp, color = Color.White)
             }
 
-
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2196F3)),
+                shape = RoundedCornerShape(50.dp),
+                onClick = { navController?.navigate(Navigasi.Formulir.name) }
+            ) {
+                Text("Formulir Pendaftaran", fontSize = 18.sp, color = Color.White)
+            }
         }
     }
 }
