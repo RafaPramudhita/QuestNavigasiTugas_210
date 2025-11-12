@@ -41,7 +41,18 @@ fun WelcomeScreen(onSubmitClick: () -> Unit) {
             modifier = Modifier.size(150.dp)
         )
 
+        Text(
+            text = "Muhammad Rafa Pramudhita",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Medium,
+            color = Color.DarkGray
+        )
 
+        Text(
+            text = "20230140210",
+            fontSize = 16.sp,
+            color = Color.Gray
+        )
 
 
     }
