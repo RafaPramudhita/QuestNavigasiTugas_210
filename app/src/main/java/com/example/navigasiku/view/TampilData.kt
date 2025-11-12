@@ -73,7 +73,18 @@ fun TampilData(
                 }
                 HorizontalDivider(thickness = 1.dp, color = Color(0xFF7E57C2))
             }
+            Spacer(modifier = Modifier.height(24.dp))
 
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2196F3)),
+                shape = RoundedCornerShape(50.dp),
+                onClick = { navController?.navigate(Navigasi.Welcome.name) }
+            ) {
+                Text("Beranda", fontSize = 18.sp, color = Color.White)
+            }
 
 
         }
