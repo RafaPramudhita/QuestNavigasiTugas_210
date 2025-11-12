@@ -19,7 +19,10 @@ enum class Navigasi {
 fun DataApp(
     navController: NavHostController = rememberNavController()
 ) {
-
+    var nama by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var status by remember { mutableStateOf("") }
 
 
 }
