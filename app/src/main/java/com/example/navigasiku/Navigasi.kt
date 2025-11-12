@@ -37,7 +37,20 @@ fun DataApp(
                     }
                 )
             }
+            composable(Navigasi.Formulir.name) {
+                FormulirPendaftaran(
+                    onSubmit = { inputNama, inputJK, inputStatus, inputAlamat ->
+                        // simpan data dari form
+                        nama = inputNama
+                        jenisKelamin = inputJK
+                        status = inputStatus
+                        alamat = inputAlamat
 
+                        // navigasi ke halaman tampil data
+                        navController.navigate(Navigasi.Detail.name)
+                    }
+                )
+            }
 
         }
     }
