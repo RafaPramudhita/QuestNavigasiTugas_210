@@ -29,6 +29,11 @@ fun TampilData(
     onBackBtnClick: () -> Unit,
     navController: NavController? = null
 ) {
-
+    val items = listOf(
+        Pair(stringResource(id = R.string.nama_lengkap), nama),
+        Pair(stringResource(id = R.string.jenis_kelamin), jenisKelamin),
+        Pair("STATUS PERKAWINAN", status),
+        Pair(stringResource(id = R.string.alamat), alamat)
+    )
 
 }
