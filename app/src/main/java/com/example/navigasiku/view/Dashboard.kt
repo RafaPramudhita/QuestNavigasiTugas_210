@@ -26,7 +26,12 @@ fun WelcomeScreen(onSubmitClick: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-
+        Text(
+            text = "Selamat Datang!",
+            fontSize = 28.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color(0xFF512DA8)
+        )
 
 
 
