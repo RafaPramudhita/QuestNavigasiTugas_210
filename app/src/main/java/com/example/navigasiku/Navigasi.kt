@@ -24,5 +24,6 @@ fun DataApp(
     var alamat by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("") }
 
-
+    Scaffold {
+    }
 }
