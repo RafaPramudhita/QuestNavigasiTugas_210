@@ -45,6 +45,37 @@ fun TampilData(
             )
         }
     ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color(0xFFD1C4E9)) // warna latar sama seperti Formulir
+                .padding(isiRuang)
+                .padding(all = dimensionResource(id = R.dimen.padding_medium)),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(space = dimensionResource(id = R.dimen.padding_small))
+        ) {
+            items.forEach { item ->
+                Column(
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text(
+                        text = item.first.uppercase(),
+                        fontSize = 16.sp,
+                        color = Color.Black
+                    )
+                    Text(
+                        text = item.second,
+                        fontWeight = FontWeight.Bold,
+                        fontFamily = FontFamily.Cursive,
+                        fontSize = 22.sp,
+                        color = Color(0xFF311B92) // teks ungu tua
+                    )
+                }
+                HorizontalDivider(thickness = 1.dp, color = Color(0xFF7E57C2))
+            }
 
+
+
+        }
     }
 }
