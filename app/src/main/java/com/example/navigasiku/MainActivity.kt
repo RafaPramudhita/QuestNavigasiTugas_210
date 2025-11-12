@@ -9,6 +9,7 @@ import com.example.navigasiku.ui.theme.NavigasiKuTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
 
     }
 }
