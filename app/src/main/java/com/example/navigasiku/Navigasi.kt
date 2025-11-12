@@ -30,7 +30,13 @@ fun DataApp(
             startDestination = Navigasi.Welcome.name,
             modifier = Modifier.padding(isiRuang)
         ) {
-
+            composable(Navigasi.Welcome.name) {
+                WelcomeScreen(
+                    onSubmitClick = {
+                        navController.navigate(Navigasi.Detail.name)
+                    }
+                )
+            }
 
 
         }
