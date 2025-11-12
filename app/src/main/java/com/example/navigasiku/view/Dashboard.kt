@@ -54,6 +54,18 @@ fun WelcomeScreen(onSubmitClick: () -> Unit) {
             color = Color.Gray
         )
 
+        Spacer(modifier = Modifier.height(32.dp))
 
+        Button(
+            onClick = onSubmitClick,
+            shape = RoundedCornerShape(50.dp),
+            modifier = Modifier
+                .padding(horizontal = 64.dp)
+                .height(50.dp)
+                .fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF512DA8))
+        ) {
+            Text(text = "Submit", color = Color.White, fontSize = 18.sp, textAlign = TextAlign.Center)
+        }
     }
 }
