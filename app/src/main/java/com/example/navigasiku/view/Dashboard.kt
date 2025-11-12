@@ -33,7 +33,13 @@ fun WelcomeScreen(onSubmitClick: () -> Unit) {
             color = Color(0xFF512DA8)
         )
 
+        Spacer(modifier = Modifier.height(24.dp))
 
+        Image(
+            painter = painterResource(id = R.drawable.bakekok),
+            contentDescription = "Logo",
+            modifier = Modifier.size(150.dp)
+        )
 
 
 
